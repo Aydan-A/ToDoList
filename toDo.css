@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Palatino;
+}
+
+body {
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.ToDo-container {
+    background-color: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.filter-buttons {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.filter-buttons div,
+.filter-buttons .clear-all {
+    padding: 2px;
+    border-radius: 25px;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.filter-buttons div:hover {
+    background-color: #56ccf2;
+    color: white;
+}
+
+.filter-buttons .clear-all {
+    background-color: #eb5757;
+    color: white;
+    margin-right: 10px;
+    border: none;
+}
+
+.filter-buttons .clear-all:hover {
+    background-color: #c0392b;
+}
+
+
+.inputData {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 25px;
+}
+
+.inputData input {
+    width: 75%;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+
+.inputData button {
+    width: 20%;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.inputData button:hover {
+    background: linear-gradient(135deg, #2f80ed, #56ccf2);
+}
+
+.task-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.task-message p {
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    display: block;
+    align-self: center;
+}
+
+.inputData button:hover {
+    background: linear-gradient(135deg, #1fed41, #3a98b7);
+}
+
+
+.checkboxtasks {
+    display: flex;
+    width: 80%;
+    /* Ensure task takes full width */
+}
+
+.checkboxtasks input[type="checkbox"] {
+    margin-right: 10px;
+    /* Space between checkbox and label */
+}
+
+.tasks {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.threedot {
+    cursor: pointer;
+    /* padding-left: 10px; */
+    font-size: 12px;
+    color: #100448;
+}
+
+.dropdown-menu {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: left;
+    padding: 10px;
+}
+
+.dropdown-menu div {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.task-separator {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.filter-buttons div.clickedBtn {
+    background-color: #56ccf2;
+    color: white;
+    font-weight: bold;
+}
+
+.chart {
+    display: flex;
+    height: 20px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: #56ccf2;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    display: flex;
+    height: 100%;
+    width: 0;
+    background-image: repeating-linear-gradient(to left, rgb(116, 116, 246), rgb(70, 70, 244), blue);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    transition: 1s ease 0.3s ;
+    justify-items: flex-start;
+}
