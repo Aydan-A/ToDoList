@@ -1,3 +1,4 @@
+let appContainer = document.querySelector(".ToDo-container");
 let inputData = document.querySelector(".inputdata");
 let submitBtn = document.querySelector(".submit");
 let tasksContainer = document.querySelectorAll(".filter-buttons div");
@@ -136,4 +137,20 @@ tasksContainer.forEach((taskBtn) => {
     tasksContainer.forEach((btn) => btn.classList.remove("clickedBtn"));
     this.classList.add("clickedBtn");
   });
+});
+
+clearAll.addEventListener("click", () => {
+  // Check if there are any tasks to clear
+  if (message.children.length > 0) {
+    message.innerHTML = "";
+    // Reset task counters
+    Tasks = 0;
+    done = 0;
+    // Reset progress bar
+    progresBar.style.width = `0%`;
+    progresBar.innerHTML = `0%`;
+    // Update task status text
+  } else {
+    alert("There are no tasks to clear!");
+  }
 });
