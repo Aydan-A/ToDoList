@@ -153,7 +153,6 @@ body {
 
 .dropdown-menu div {
     cursor: pointer;
-    padding: 5px 0;
 }
 
 .task-separator {
@@ -186,6 +185,15 @@ body {
     background-image: repeating-linear-gradient(to left, rgb(116, 116, 246), rgb(70, 70, 244), blue);
     border-radius: 20px;
     color: rgb(255, 255, 255);
-    transition: 1s ease 0.3s ;
+    transition: 1s ease 0.3s;
     justify-items: flex-start;
+}
+
+.edit-input {
+    font-size: 16px;
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }

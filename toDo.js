@@ -83,6 +83,35 @@ submitBtn.addEventListener("click", () => {
     threedotContainer.appendChild(deLete);
 
     threedot.appendChild(threedotContainer);
+
+    deLete.addEventListener("click", () => {
+      let hr = divContainer.nextElementSibling;
+      hr.remove();
+      divContainer.remove();
+      Tasks--;
+      Status.innerHTML = Status.innerHTML = `You have ${Tasks} task(s)`;
+    });
+
+    edit.addEventListener("click", function () {
+      let inputEdit = document.createElement("input");
+      inputEdit.type = "text";
+      inputEdit.value = myTask;
+      inputEdit.classList.add("edit-input");
+      divMyTask.replaceChild(inputEdit, newTask);
+
+      inputEdit.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          const newValue = inputEdit.value.trim();
+          if (newValue) {
+            newTask.innerHTML = newValue;
+            inputEdit.replaceWith(newTask);
+          } else {
+            alert("Task cannot be empty!");
+          }
+        }
+      });
+    });
+
     inputData.value = "";
 
     threedot.addEventListener("click", () => {
