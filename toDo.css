@@ -182,7 +182,7 @@ body {
     display: flex;
     height: 100%;
     width: 0;
-    background-image: repeating-linear-gradient(to left, rgb(116, 116, 246), rgb(70, 70, 244), blue);
+    background-image: repeating-linear-gradient(to right, rgb(116, 116, 246), rgb(70, 70, 244), blue);
     border-radius: 20px;
     color: rgb(255, 255, 255);
     transition: 1s ease 0.3s;
