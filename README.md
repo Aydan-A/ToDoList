@@ -2,13 +2,18 @@
 
 A simple, user-friendly to-do list application built using HTML, CSS, and JavaScript. This application allows users to add, mark as complete, delete tasks, and organize their daily tasks efficiently.
 
-## Features
-
-- Add new tasks
-- Mark tasks as complete/incomplete
-- Delete tasks
-- Task persistence using local storage (tasks remain after page refresh)
-- Clear all completed tasks in one click
+Add New Tasks
+-Quickly add new tasks to your list with a title and optional details.
+Toggle Task Status
+-Mark tasks as complete or incomplete with a single click.
+Delete Tasks Easily
+-Remove tasks individually using a delete button or simply unmark them when needed.
+PostgreSQL Integration
+-All tasks are stored securely in a PostgreSQL database for persistence.
+Clear Completed Tasks
+-Instantly remove all completed tasks with one click.
+Track Your Progress
+-Visualize how many tasks you've completed and how many remain.
 
 ## Screenshot
 
