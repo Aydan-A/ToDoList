@@ -12,7 +12,7 @@ A simple, user-friendly to-do list application built using HTML, CSS, and JavaSc
 
 ## Screenshot
 
-![image](https://github.com/user-attachments/assets/b9268706-5b30-415e-a0fb-baa4e803d736)
+<img width="470" alt="Screenshot 2025-06-27 at 1 03 26 PM" src="https://github.com/user-attachments/assets/a2ae9c58-fb44-49b8-af48-f56638f584e4" />
 
 
 ## Installation
@@ -21,3 +21,4 @@ A simple, user-friendly to-do list application built using HTML, CSS, and JavaSc
 
    ```bash
    git clone https://github.com/Aydan-A/ToDoList.git
+
