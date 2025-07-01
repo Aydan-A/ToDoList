@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import ToDoItem from './ToDoItem';
+import FilteredButtons from './FilteredButtons';
 import axios from 'axios';
 import './TodoList.css';
 
@@ -137,29 +139,11 @@ const TodoList = () => {
                 <button onClick={addTask}>Add</button>
             </div>
 
-            <div className="filter-buttons">
-                <div
-                    className={`all-tasks ${filter === 'all' ? 'clickedBtn' : ''}`}
-                    onClick={() => setFilter('all')}
-                >
-                    All
-                </div>
-                <div
-                    className={`pending-tasks ${filter === 'pending' ? 'clickedBtn' : ''}`}
-                    onClick={() => setFilter('pending')}
-                >
-                    Pending
-                </div>
-                <div
-                    className={`completed-tasks ${filter === 'completed' ? 'clickedBtn' : ''}`}
-                    onClick={() => setFilter('completed')}
-                >
-                    Completed
-                </div>
-                <button className="clear-all" onClick={clearAll}>
-                    Clear All Tasks
-                </button>
-            </div>
+            <FilteredButtons
+                filter={filter}
+                setFilter={setFilter}
+                clearAll={clearAll}
+            />
 
             <div className="task-message">
                 <p className="status">
@@ -168,37 +152,19 @@ const TodoList = () => {
                         : `You have ${tasks.length} task(s) and you completed ${progress}% out of 100%`}
                 </p>
                 {filteredTasks.map(task => (
-                    <div key={task.id} className="tasks">
-                        <div className="checkboxtasks">
-                            <input
-                                type="checkbox"
-                                checked={task.completed}
-                                onChange={() => toggleTask(task.id)}
-                            />
-                            {editingTaskId === task.id ? (
-                                <input
-                                    type="text"
-                                    className="edit-input"
-                                    value={editingText}
-                                    onChange={(e) => setEditingText(e.target.value)}
-                                    onKeyDown={(e) => e.key === 'Enter' && saveEdit(task.id)}
-                                    onBlur={() => saveEdit(task.id)}
-                                    autoFocus
-                                />
-                            ) : (
-                                <label style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>
-                                    {task.title}
-                                </label>
-                            )}
-                        </div>
-                        <div className="threedot" onClick={(e) => toggleDropdown(task.id, e)}>
-                            ⋮
-                            <div className={`dropdown-menu ${openDropdownId === task.id ? 'show' : ''}`}>
-                                <div onClick={(e) => { toggleDropdown(task.id, e); startEditing(task); }}>Edit</div>
-                                <div onClick={(e) => { toggleDropdown(task.id, e); deleteTask(task.id); }}>Delete</div>
-                            </div>
-                        </div>
-                    </div>
+                    <ToDoItem
+                        key={task.id}
+                        task={task}
+                        toggleTask={toggleTask}
+                        deleteTask={deleteTask}
+                        startEditing={startEditing}
+                        saveEdit={saveEdit}
+                        setEditingText={setEditingText}
+                        toggleDropdown={toggleDropdown}
+                        editingTaskId={editingTaskId}
+                        editingText={editingText}
+                        openDropdownId={openDropdownId}
+                    />
                 ))}
             </div>
 
