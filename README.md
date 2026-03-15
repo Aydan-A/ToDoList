@@ -24,8 +24,7 @@ A simple, user-friendly to-do list application built using HTML, CSS, and JavaSc
 
 
 ## ✨ Screenshot
-
-<img src="docs/landing-page.png" alt="Landing page" width="900" />
+<img src="https://your-image-url.com/landing-page.png" alt="Landing page preview" width="900" />
 
 
 <img width="493" alt="Screenshot 2025-06-27 at 1 34 19 PM" src="https://github.com/user-attachments/assets/67d64944-62e3-4599-9e34-07e163c2eb76" />
