@@ -4,6 +4,7 @@
   "description": "A simple, user-friendly to-do list application built using HTML, CSS, and JavaScript. This application allows users to add, mark as complete, delete tasks, and organize their daily tasks efficiently.",
   "main": "index.js",
   "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm start",

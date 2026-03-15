@@ -34,4 +34,20 @@ A simple, user-friendly to-do list application built using HTML, CSS, and JavaSc
 
    ```bash
    git clone https://github.com/Aydan-A/ToDoList.git
+   cd ToDoList
+   ```
 
+2. Install dependencies:
+
+   ```bash
+   npm install
+   cd server && npm install
+   cd ../client && npm install
+   cd ..
+   ```
+
+3. Start the app in development mode:
+
+   ```bash
+   npm run dev
+   ```
