@@ -24,10 +24,11 @@ A simple, user-friendly to-do list application built using HTML, CSS, and JavaSc
 
 
 ## ✨ Screenshot
-<img src="https://your-image-url.com/landing-page.png" alt="Landing page preview" width="900" />
-
-
-<img width="493" alt="Screenshot 2025-06-27 at 1 34 19 PM" src="https://github.com/user-attachments/assets/67d64944-62e3-4599-9e34-07e163c2eb76" />
+<img width="1391" height="850" alt="Image" src="https://github.com/user-attachments/assets/a55bf96f-140f-4377-9dbe-9bbe755defdc" />
+<img width="1819" height="1053" alt="Image" src="https://github.com/user-attachments/assets/65992465-08ff-41b3-ae4c-73e5f92cd914" />
+<img width="1288" height="1055" alt="Image" src="https://github.com/user-attachments/assets/be2a7ada-ae7c-4344-bc89-29564e48725b" />
+<img width="1200" height="1054" alt="Image" src="https://github.com/user-attachments/assets/5387df3b-3cc8-4a7a-8f66-1b26af4a02ee" />
+<img width="1200" height="1054" alt="Image" src="https://github.com/user-attachments/assets/6dd520bb-9d57-4ea7-a71e-56f5547ee8e1" />
 
 
 
